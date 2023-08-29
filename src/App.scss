@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, white, #61dafb);
 }
 
 .App-logo {
@@ -44,9 +46,26 @@
   justify-content: space-evenly;
 }
 
+#intro-left {
+  text-align: left;
+}
+
+#intro-text {
+  margin-bottom: 20px;
+}
+
 #intro-photo {
   img {
     max-height: 50vh;
     border-radius: 200px;
   }
+}
+
+#icon-links {
+  margin: 20px;
+}
+
+.paper {
+  margin-top: 20px;
+  padding: 20px;
 }
