@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-image: linear-gradient(to right, white, #61dafb);
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  color: white;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -40,10 +42,15 @@
   }
 }
 
+#navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #intro-page {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 100vh;
 }
 
 #intro-left {
@@ -57,7 +64,7 @@
 #intro-photo {
   img {
     max-height: 50vh;
-    border-radius: 200px;
+    border-radius: 20px;
   }
 }
 
@@ -71,7 +78,40 @@
 }
 
 #tech-stack-list {
-  i{
+  i {
     margin: 5px;
+  }
+
+  i:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+  }
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+
+  h2 {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h4 {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
